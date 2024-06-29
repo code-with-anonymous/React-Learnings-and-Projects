@@ -4,8 +4,8 @@ import { useCallback, useState ,useEffect ,useRef } from 'react'
 export default function Password() {
 
   const [length, setlength] = useState(8)
-  const [number, setnumber] = useState(true)
-  const [character, setcharacter] = useState(true)
+  const [number, setnumber] = useState(false)
+  const [character, setcharacter] = useState(false)
   const [Passsword, setPasssword] = useState("")
 
   const passRef=useRef(null)
@@ -30,8 +30,8 @@ export default function Password() {
       const copyPasswordToClipboard = useCallback(() => {
         passRef.current?.select();
         passRef.current?.setSelectionRange(0, 999);
-        window.navigator.clipboard.writeText(Password)
-      }, [Password])
+        window.navigator.clipboard.writeText(Passsword)
+      }, [Passsword])
 
       useEffect(() => {
         passwordGenerator()
