@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from "react-toastify";
 
 export default function ForgotPassword() {
 
@@ -12,7 +13,7 @@ export default function ForgotPassword() {
     let newPassword = getInput("newPassword");
     
     if (!fullName || !newPassword) {
-      alert("Please fill out all given fields");
+      toast.error("Please fill out all given fields");
       return;
     }
     
@@ -31,9 +32,9 @@ export default function ForgotPassword() {
     if (userExists) {
       // Update local storage with modified data
       localStorage.setItem("user", JSON.stringify(updatedData));
-      alert("Password is successfully updated");
+      toast.success("Password is successfully updated");
     } else {
-      alert("User not found");
+      toast.error("User not found");
     }
 
     console.log('Updated data:', updatedData);

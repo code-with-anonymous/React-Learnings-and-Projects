@@ -7,6 +7,7 @@ export default function Register() {
   const navigate = useNavigate();
 
   let data = JSON.parse(localStorage.getItem("user")) || [];
+  console.log('data', data)
 
   const getInput = (id) => {
     return document.getElementById(id).value;
@@ -15,9 +16,12 @@ export default function Register() {
   const signUp = (event) => {
     event.preventDefault();
     let email = getInput("email");
-    let password = getInput("password");
-    let fullName = getInput("fullName");
+    console.log('email', email)
 
+    let password = getInput("password");
+    console.log('password', password)
+    let fullName = getInput("fullName");
+    console.log('fullName', fullName)
     // Validation checks
     if (!email) {
       toast.error("Invalid email!");
@@ -34,10 +38,12 @@ export default function Register() {
 
     let obj = { email, password, fullName };
     let userFound = data.some(user => user.email === obj.email);
+    console.log('userfound:', userFound)
 
     if (!userFound) {
       data.push(obj);
-      localStorage.setItem("user", JSON.stringify(data));
+      data=localStorage.setItem("user", JSON.stringify(data));
+      console.log('data', data)
       setIsRegistered(true);
       toast.success("User is registered");
       navigate('/login');
@@ -54,17 +60,17 @@ export default function Register() {
           <form>
             <div className="col my-2">
               <label htmlFor="fullName">Full Name</label>
-              <input type="text" name="fullName" placeholder='Enter your Full Name' className='form-control mt-1' id='fullName' />
+              <input type="text" name="fullName" placeholder='Enter your Full Name' className='abc form-contro mt-1' id='fullName' />
             </div>
             <div className="col my-2">
               <label htmlFor="email">Email</label>
-              <input type="email" name="email" placeholder='Enter your email' className='form-control mt-1' id='email' />
+              <input type="email" name="email" placeholder='Enter your email' className='abc form-control mt-1' id='email' />
             </div>
             <div className="col py-2">
               <label htmlFor="password">Password</label>
-              <input type="password" name="password" placeholder='Enter your password' className='form-control mt-1' id='password' />
+              <input type="password" name="password" placeholder='Enter your password' className='abc form-control mt-1' id='password' />
             </div>
-            <div className="col text-center">
+            <div className="col-12 text-center">
               <button className='btn btn-md w-50 mt-3 btn-dark' onClick={signUp}>Sign Up</button>
             </div>
           </form>

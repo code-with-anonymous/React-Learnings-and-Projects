@@ -43,14 +43,14 @@ export default function Login() {
             <form>
               <div className="col my-2">
                 <label htmlFor="email">Email</label>
-                <input type="email" name="email" placeholder='Enter your email' className='form-control' id='email' />
+                <input type="email" name="email" placeholder='Enter your email' className='form-control mt-1' id='email' />
               </div>
               <div className="col py-2">
                 <label htmlFor="password">Password</label>
-                <input type="password" name="password" placeholder='Enter your password' className='form-control' id='password' />
+                <input type="password" name="password" placeholder='Enter your password' className='form-control mt-1' id='password' />
               </div>
               <div className="text-end mt-2">
-                <Link to="/forgot-password" className='ms-1 text-black fw-bolder' style={{ textDecoration: 'none' }}>Forgot Password?</Link>
+                <Link to="/forgot-password" className='ms-1 mb-1 text-black fw-bolder' style={{ textDecoration: 'none' }}>Forgot Password?</Link>
               </div>
               <div className="col text-center">
                 <button className='btn btn-md w-50 mt-3 mb-1 btn-dark' onClick={validate}>Login</button>

@@ -1,23 +1,44 @@
+/* App.scss */
+
+/* Import Bootstrap */
 @import "./scss/bootstrap";
 
-  .form{
-  height: 100vh;
+/* Body styling */
+body {
+  background-color: lightgray;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  height: 100vh;
 }
-.container{
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 80vh;
-width: 50vw;
-border: 2px solid black;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-/* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 
+/* Form styling */
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
+
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 55vw;
+  border: 2px solid black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+
+
+
 
 
 
