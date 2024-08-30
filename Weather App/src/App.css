@@ -1,0 +1,118 @@
+
+.body {
+  background-image: url("./assets/Images/background.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 40vw;
+  height: 77vh; /* Adjust this value as needed */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+ 
+}
+
+.container1 {
+  width: 25vw;
+  height: 70vh; /* Ensure this matches container height */
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.img {
+  background-image: url("./assets/Images/city.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%; /* Ensure the image covers the entire container */
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+
+.city-name {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.time-and-date {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.temperature {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  font-size: 32px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  outline: none;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
