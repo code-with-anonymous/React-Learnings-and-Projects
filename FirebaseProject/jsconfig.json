@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "Config/*": ["Config/*"],
+      "components/*": ["components/*"],
+      "context/*": ["context/*"],
+      "pages/*": ["pages/*"]
+    }
+  },
+  "include": ["src"]
+}

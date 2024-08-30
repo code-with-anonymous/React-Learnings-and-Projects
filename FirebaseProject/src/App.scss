@@ -1,0 +1,21 @@
+@import "./scss/bootstrap";
+@import "./Scss/auth.scss";
+@import "./scss/Dashboard.scss";
+@import"./Scss/sidebar.scss";
+@import "./Scss/components.scss";
+@import "./Scss/menu.scss";
+@import "./Scss/service.scss";
+@import "./Scss/contact.scss";
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1 0 auto;
+}
+hrml,body{
+    overflow-x: hidden;
+}

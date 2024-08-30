@@ -1,0 +1,24 @@
+/* DashboardApp.css */
+.custom-action-button {
+    border: none;
+    background: transparent;
+    margin-right: 8px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .custom-edit-icon {
+    color: #1890ff; /* Primary color */
+    font-size: 18px;
+  }
+  
+  .custom-delete-icon {
+    color: #ff4d4f; /* Danger color */
+    font-size: 18px;
+  }
+  
+  .custom-action-button:hover .custom-edit-icon,
+  .custom-action-button:hover .custom-delete-icon {
+    opacity: 0.8;
+  }
+  

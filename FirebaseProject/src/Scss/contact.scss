@@ -1,0 +1,64 @@
+// .contact-section {
+//     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+//     background: url('/path-to-your-background-image.jpg') no-repeat center center/cover;
+//     // background-color: rgb(15, 23, 43);
+//     position: relative;
+//     height: 50vh;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: white;
+  
+//     .overlay {
+//       background-color: rgba(0, 0, 0, 0.5);
+//       width: 100%;
+//       height: 100%;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       flex-direction: column;
+//       text-align: center;
+  
+//       h1 {
+//         font-size: 48px;
+//         font-weight: bold;
+//         margin-bottom: 20px;
+//       }
+  
+//       .breadcrumb {
+//         background-color: transparent;
+//         padding: 0;
+//         margin-bottom: 0;
+//         li {
+//           display: inline-block;
+//           font-size: 18px;
+//           margin-right: 5px;
+//           color: #ff8300;
+  
+//           a {
+//             color: #ff8300;
+//             text-decoration: none;
+  
+//             &:hover {
+//               text-decoration: underline;
+//             }
+//           }
+  
+//           &.active {
+//             color: white;
+//           }
+  
+//           &::after {
+//             content: "/";
+//             color: white;
+//             margin-left: 5px;
+//           }
+  
+//           &:last-child::after {
+//             content: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+  

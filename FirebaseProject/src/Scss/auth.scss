@@ -1,0 +1,11 @@
+main.auth {
+    background: $primary;
+    background: linear-gradient(to right, $primary, #243B55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        max-width: 450px;
+    }
+}
